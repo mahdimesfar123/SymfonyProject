@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ movie.moviename }}{% endblock %}
+{% block body %}
+<h1 style="color: #007FFF">Movie Name: {{ movie.moviename }}</h1>
+<h3>Movie Room: {{ movie.movieroom }}</h3>
+<p>From: {{ movie.starttime }}<br>
+To: {{ movie.endtime }}</p>
+<hr>
+<a href="/" class="btn btn-primary">back</a>
+{% endblock %}
